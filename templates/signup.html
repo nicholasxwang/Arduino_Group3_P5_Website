@@ -1,0 +1,55 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+  body{
+    color:white;
+    background:#090909;
+    font-family: 'Lato', sans-serif;
+
+  }
+  input{
+    border-radius:5px;
+    background:#161616;
+    padding:10px;
+    border-style:solid;
+    border-color:transparent;
+    color:white;
+    width:500px;
+    margin-bottom:15px;
+    outline:none;
+  }
+  input:focus{
+    border-color:grey;
+    border-weight:2px;
+  }
+  input::placeholder{
+    color:grey;
+    font-size:1.3em;
+  }
+  input[type=submit]{
+    background-color:#0091ff;
+    color:white;
+    font-size:1.5em;
+    width:250px;
+  }
+  input[type=submit]:hover{
+    background-color: #035a9c;
+  }
+  .maindiv{
+    margin-top:200px;
+  }
+  a{
+    color:#0091ff;
+    font-weight:800;
+    text-decoration:none;
+  }
+
+</style>
+<center>
+<div class="maindiv">
+<h1>Sign Up to TheClaw</h1>
+Username: <input type="text" placeholder="john_doe_123"><br>
+Password:  <input type="password" placeholder="••••••••"><br>
+<input type="submit" placeholder="Sign Up">
+<p>Do you already have an account? Try <a href="/login">logging in!</a></p>
+</div>
+</center>
