@@ -11,13 +11,15 @@ def signup():
 
 @app.route("/dashboard")
 def dashboard():
-  return render_template
-  ("dashboard.html")
-@app.route("/")
+  return render_template(
+    "dashboard.html"
+  )
 def homescreen():
   username = request.cookies.get('u')
   password = request.cookies.get('p')
   if not username and not password:
     return redirect("/login")
   return redirect("/dashboard")
+
+
 app.run(host='0.0.0.0', port=8080)
