@@ -14,6 +14,7 @@ def dashboard():
   return render_template(
     "dashboard.html"
   )
+@app.route("/")
 def homescreen():
   username = request.cookies.get('u')
   password = request.cookies.get('p')
